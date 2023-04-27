@@ -9,7 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       rel="stylesheet"
     />
-    <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/main.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,53 +20,57 @@
   <body>
     <header class="page-header">
       <div class="container">
-        <a class="logo" href="./index.html"
-          ><span class="logo logo--half">Web</span>Studio</a
-        >
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <div class="nav__item nav__item--active">
-                <a class="nav__link" href="./index.html">Agencja</a>
-              </div>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Kontakt</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="contact">
-          <span class="contact__item">
-            <svg class="contact__icon" width="16px" height="12px">
-              <use href="./images/icons.svg#icon-envelope"></use>
-            </svg>
-            <a class="contact__link" href="mailto:info@devstudio.com">
-              info@devstudio.com</a
-            ></span
+        <div class="flex">
+          <a class="logo" href="./index.html"
+            ><span class="logo logo--half">Web</span>Studio</a
           >
-          <span class="contact__item">
-            <svg class="contact__icon" width="10px" height="16px">
-              <use href="./images/icons.svg#icon-smartphone"></use>
-            </svg>
-            <a class="contact__link" href="tel:+48111111111">+48 111 111 111</a>
-          </span>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <div class="nav__item nav__item--active">
+                  <a class="nav__link nav__link--active" href="./index.html"
+                    >Agencja</a
+                  >
+                </div>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav__item nav__item--last">
+                <a class="nav__link" href="#">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="contact">
+            <span class="contact__item">
+              <svg class="contact__icon" width="16px" height="12px">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              <a class="contact__link" href="mailto:info@devstudio.com">
+                info@devstudio.com</a
+              ></span
+            >
+            <span class="contact__item contact__item--last">
+              <svg class="contact__icon" width="10px" height="16px">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              <a class="contact__link" href="tel:+48111111111"
+                >+48 111 111 111</a
+              >
+            </span>
+          </div>
         </div>
       </div>
     </header>
     <main>
-      <section class="title-field">
-        <div class="title-field-fluid">
+      <section class="page-title">
+        <div class="title-field">
           <div class="container">
-            <h1 class="title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-            <div class="button-container">
-              <button
-                class="order-service-button"
-                type="button"
-                data-modal-open
-              >
+            <h1 class="title-field__name">
+              EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
+            </h1>
+            <div class="title-field__button-container">
+              <button class="title-field__button" type="button" data-modal-open>
                 Zamów usługę
               </button>
             </div>
