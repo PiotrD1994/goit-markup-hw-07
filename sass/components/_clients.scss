@@ -1,7 +1,4 @@
-.container {
-    width: 1200px;
-    margin: 0 auto;
-}
+
 .clients {
     padding-bottom: 94px;
     padding-top: 94px;
@@ -42,7 +39,10 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         &:hover,
         &:focus {
-         border-color: $fourthBackgroundColor;   
+         fill: $fourthBackgroundColor; 
+         transition-property: fill;
+         transition-duration: 250ms;
+         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
         }
       }
       &__link {
@@ -56,7 +56,10 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         &:hover,
         &:focus {
-            fill: $thirdTextColor;    
+            border-color: $thirdTextColor;  
+            transition-property: fill;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
         }
       }
 }

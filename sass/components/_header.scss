@@ -20,6 +20,10 @@ border-bottom: 1px solid $borderLineColor;
     &--half {
         color: $thirdTextColor;
     }
+    &--footer {
+    color: $fouthTextColor;
+    padding-bottom: 0px;
+    }
 }
 .flex {
     display: flex;

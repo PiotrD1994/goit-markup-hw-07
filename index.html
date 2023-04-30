@@ -432,34 +432,34 @@
         </div>
       </section>
     </main>
-    <footer class="bottom-page">
+    <footer class="page-footer">
       <div class="container">
-        <div class="wrapper-bottom">
-          <div class="main-bottom">
-            <div class="logo-bottom">
-              <a class="logo-bottom-link" href="./index.html"
-                ><span class="half-logo">Web</span>Studio</a
+        <div class="page-footer__wrapper">
+          <div class="page-footer__secondary-container">
+            <div class="page-footer__logo-container">
+              <a class="logo logo--footer" href="./index.html"
+                ><span class="logo logo--half">Web</span>Studio</a
               >
             </div>
-            <div class="contact-data">
-              <address class="address-of-company">
+            <div class="contact-footer">
+              <address class="contact-footer__address">
                 m. Warszawa, Aleje Jerozolimskie 21
               </address>
-              <a class="bottom-contact" href="info@example.com"
+              <a class="contact-footer__link" href="info@example.com"
                 >info@example.com</a
               ><br />
-              <a class="bottom-contact" href="tel:+48111111111"
+              <a class="contact-footer__link" href="tel:+48111111111"
                 >+48 111 111 111</a
               >
             </div>
           </div>
-          <div class="side-bottom">
-            <h3 class="secondary-header-bottom">DOŁĄCZ DO NAS</h3>
-            <ul class="social-media-bottom-list">
-              <li class="social-media-bottom-item">
-                <a href="" class="social-media-bottom-link"
+          <div class="footer-social-media">
+            <h3 class="footer-social-media__header">DOŁĄCZ DO NAS</h3>
+            <ul class="footer-social-media__list">
+              <li class="footer-social-media__item">
+                <a href="" class="footer-social-media__link"
                   ><svg
-                    class="social-media-bottom-icon"
+                    class="footer-social-media__icon"
                     width="44px"
                     height="44px"
                   >
@@ -467,10 +467,10 @@
                   </svg>
                 </a>
               </li>
-              <li class="social-media-bottom-item">
-                <a href="" class="social-media-bottom-link"
+              <li class="footer-social-media__item">
+                <a href="" class="footer-social-media__link"
                   ><svg
-                    class="social-media-bottom-icon"
+                    class="footer-social-media__icon"
                     width="44px"
                     height="44px"
                   >
@@ -478,10 +478,10 @@
                   </svg>
                 </a>
               </li>
-              <li class="social-media-bottom-item">
-                <a href="" class="social-media-bottom-link"
+              <li class="footer-social-media__item">
+                <a href="" class="footer-social-media__link"
                   ><svg
-                    class="social-media-bottom-icon"
+                    class="footer-social-media__icon"
                     width="44px"
                     height="44px"
                   >
@@ -489,10 +489,12 @@
                   </svg>
                 </a>
               </li>
-              <li class="social-media-bottom-item">
-                <a href="" class="social-media-bottom-link"
+              <li
+                class="footer-social-media__item footer-social-media__item--last"
+              >
+                <a href="" class="footer-social-media__link"
                   ><svg
-                    class="social-media-bottom-icon"
+                    class="footer-social-media__icon"
                     width="44px"
                     height="44px"
                   >
@@ -502,22 +504,20 @@
               </li>
             </ul>
           </div>
-          <div class="newsletter-bottom">
+          <div class="newsletter">
             <form>
               <label>
-                <h3 class="secondary-header-bottom">
-                  zapisz się do newslettera
-                </h3>
-                <div class="input-wrapper">
+                <h3 class="newsletter__header">zapisz się do newslettera</h3>
+                <div class="newsletter__wrapper">
                   <input
-                    class="mail-input"
+                    class="newsletter__input"
                     type="email"
                     name="email"
                     placeholder="E-mail"
                   />
-                  <button class="newsletter-button" type="submit">
+                  <button class="newsletter__button" type="submit">
                     Zapisz się
-                    <svg class="icon-send" width="24px" height="24px">
+                    <svg class="newsletter__icon" width="24px" height="24px">
                       <use href="./images/icons.svg#icon-icon-send"></use>
                     </svg>
                   </button>
@@ -530,62 +530,66 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="x-button" data-modal-close>x</button>
-        <p class="form-title">Zostaw swoje dane w formularzu poniżej</p>
-        <form class="form-client">
+        <button type="button" class="modal__button" data-modal-close>X</button>
+        <p class="modal__title">Zostaw swoje dane w formularzu poniżej</p>
+        <form class="modal-form">
           <label
-            ><span class="form-client-title">Imie</span>
-            <div class="input-container">
-              <svg class="form-client-icon" width="12px" height="12px">
+            ><span class="modal-form__title">Imie</span>
+            <div class="modal-form__container">
+              <svg class="modal-form__icon" width="12px" height="12px">
                 <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
               </svg>
-              <input class="form-client-input" type="text" name="name" />
+              <input class="modal-form__input" type="text" name="name" />
             </div>
           </label>
           <label
-            ><span class="form-client-title">Telefon</span>
-            <div class="input-container">
-              <svg class="form-client-icon" width="13px" height="13px">
+            ><span class="modal-form__title">Telefon</span>
+            <div class="modal-form__container">
+              <svg class="modal-form__icon" width="13px" height="13px">
                 <use href="./images/icons.svg#icon-Vector"></use>
               </svg>
               <input
-                class="form-client-input"
+                class="modal-form__input"
                 type="tel"
                 name="phone-number"
               /></div
           ></label>
-          <label class="form-client-item"
-            ><span class="form-client-title">E-mail</span>
-            <div class="input-container">
-              <svg class="form-client-icon" width="15px" height="12px">
+          <label
+            ><span class="modal-form__title">E-mail</span>
+            <div class="modal-form__container">
+              <svg class="modal-form__icon" width="15px" height="12px">
                 <use href="./images/icons.svg#icon-Vector1"></use>
               </svg>
               <input
-                class="form-client-input"
+                class="modal-form__input"
                 type="email"
                 name="email-contact"
               /></div
           ></label>
           <label
-            ><span class="form-client-title">Komentarz</span>
+            ><span class="modal-form__title">Komentarz</span>
             <textarea
-              class="form-client-feedback"
+              class="modal-form__feedback"
               name="feedback"
               placeholder="Wprowadź tekst"
             ></textarea>
           </label>
-          <label class="terms-container">
-            <input class="terms-checkbox" type="checkbox" name="terms" />
-            <svg class="active-checkbox" width="16px" height="15px">
+          <label class="modal-form__terms">
+            <input
+              class="modal-form__terms-checkbox"
+              type="checkbox"
+              name="terms"
+            />
+            <svg class="modal-form__terms-icon" width="16px" height="15px">
               <use href="./images/icons.svg#icon-Vector2"></use>
             </svg>
-            <span class="form-client-terms">
+            <span class="modal-form__terms-title">
               Oświadczam iż akceptuje
               <a href="#">Regulamin</a>i
               <a href="#">Politykę prywatności</a>
             </span>
           </label>
-          <button class="form-client-button" type="submit">Wyślij</button>
+          <button class="modal-form__button" type="submit">Wyślij</button>
         </form>
       </div>
     </div>
