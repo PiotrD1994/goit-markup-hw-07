@@ -8,7 +8,7 @@ background-color: $primaryColorBackground;
     margin: 0 auto;
     background-image: linear-gradient(
         to bottom,
-        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0),
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/background.jpg);
@@ -50,6 +50,5 @@ background-color: $primaryColorBackground;
         padding: 10px 41px;
         white-space: nowrap;
         border: none;
-
     }
 }
